@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+{%for message in g.user.likes %}
+<b>{{message.user.username}}</b>
+<div>{{message.text}}</div>
+{% endfor %}
+
+
+{% endblock %}
